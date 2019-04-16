@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 8082
 spring:
   application:
     name: item-service
@@ -7,9 +7,7 @@ spring:
     url: jdbc:mysql://localhost:3306/leyou
     username: root
     password: root
-    hikari:
-      maximum-pool-size: 30
-      minimum-idle: 10
+    driver-class-name: com.mysql.jdbc.Driver
 eureka:
   client:
     service-url:
